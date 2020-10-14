@@ -1,15 +1,15 @@
-package nullObject;
 public class Test {
    public static void main(String[] args) {
 
-      AbstractEmployee emp = EmployeeFactory.getCustomer("Juan");
-      AbstractEmployee emp2 = EmployeeFactory.getCustomer("Gigi");
-      AbstractEmployee emp3 = EmployeeFactory.getCustomer("Pedro");
-      AbstractEmployee emp4 = EmployeeFactory.getCustomer("Juan Sebastian");
+      EmployeeI emp = EmployeeFactory.getUser("Emp1");
+      EmployeeI emp2 = EmployeeFactory.getUser("Emp3");
+      EmployeeI emp3 = EmployeeFactory.getUser("Emp3");
+      EmployeeI emp4 = EmployeeFactory.getUser("Emp4");
 
-      System.out.println(emp.getNombre());
-      System.out.println(emp2.getNombre());
-      System.out.println(emp3.getNombre());
-      System.out.println(emp4.getNombre());
+      emp.aprobar();
+      emp2.aprobar();
+      emp3.aprobar();
+      emp4.aprobar();
+      
    }
 }

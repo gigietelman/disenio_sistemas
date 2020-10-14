@@ -1,14 +1,15 @@
-package nullObject;
-class Programador extends AbstractEmployee {
-   public Programador(String nombre) {
+class Programador implements EmployeeI {
+
+private String nombre;
+public Programador(String nombre) {
       this.nombre = nombre;    
    }
-   @Override
    public String getNombre() {
       return nombre;
    }
-   @Override
-   public boolean isNull() {
-      return false;
-   }
+@Override
+public void aprobar() {
+    System.out.println("El usuario aprobo la orden");	
+}
+  
 }

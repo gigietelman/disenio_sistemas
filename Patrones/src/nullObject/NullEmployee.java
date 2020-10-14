@@ -1,16 +1,9 @@
-package nullObject;
-class NullEmployee extends AbstractEmployee {
+class NullEmployee implements EmployeeI {
+
+	@Override
+	public void aprobar() {
+		System.out.println("Operacion No disponible");
+	}
   
 
-  @Override
-   public boolean isNull() {
-      return true;
-   }
-
-@Override
-public String getNombre() {
-	// TODO Auto-generated method stub
-	return  "No Disponible"; 
-
-}
 }
