@@ -1,20 +1,24 @@
-package Clase02piedrapapeltijera;
+package DoubleDispatch;
 
 public class Piedra implements Elemento {
 
 	@Override
-	public int jugar(Piedra elemento) {
-		return 0;
+	public Resultado jugar(Piedra elemento) {
+		return Resultado.EMPATASTE;
 	}
 	
 	@Override
-	public int jugar(Papel elemento) {
-		return -1;
+	public Resultado jugar(Papel elemento) {
+		return Resultado.PERDISTE;
 	}
 	
 	@Override
-	public int jugar(Tijera elemento) {
-		return 1;
+	public Resultado jugar(Tijera elemento) {
+		return Resultado.GANASTE;
 	}
 
+	@Override
+	public Resultado jugar(Elemento elemento) {
+		return elemento.jugar(this);
+	}
 }

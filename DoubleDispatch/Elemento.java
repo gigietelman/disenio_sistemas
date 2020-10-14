@@ -1,6 +1,9 @@
-package Clase02piedrapapeltijera;
+package DoubleDispatch;
 public interface Elemento {
-	int jugar(Piedra elemento);
-	int jugar(Papel elemento);
-	int jugar(Tijera elemento);
+	
+	Resultado jugar(Piedra elemento);
+	Resultado jugar(Papel elemento);
+	Resultado jugar(Tijera elemento);
+	
+	Resultado jugar(Elemento elmento);
 }
