@@ -1,14 +1,14 @@
 
 package AbstractFactory;
 
-public class CocaColaFactory extends AbstractFactory {
+public class PepsiFactory extends AbstractFactory {
 
 	public BebidaColaAbs crearBebidaCola() {
-		return new CocaCola();
+		return new Pepsi();
 	}
 
 	public BebidaDeLimonAbs crearBebidaLimon() {
-		return new Sprite();
+		return new SevenUp();
 	}
 
 }

@@ -8,7 +8,7 @@ public class BebidasFactory {
 	
 
 	public AbstractFactory creaPepsiColaFactory() {
-		return new PepsiColaFactory();
+		return new PepsiFactory();
 	}
 
 }

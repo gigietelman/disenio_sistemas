@@ -1,7 +1,7 @@
 
 package AbstractFactory;
 
-public class Pepsi extends BebidaDeColaAbstracta {
+public class Pepsi extends BebidaColaAbs {
 
 	public Pepsi() {
 		setNombre("Pepsi");

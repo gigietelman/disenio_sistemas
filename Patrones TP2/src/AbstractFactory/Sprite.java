@@ -1,14 +1,13 @@
 
 package AbstractFactory;
 
-public class CocaCola extends BebidaColaAbs {
-
-	public CocaCola() {
-		setNombre("Coca Cola");
+public class Sprite extends BebidaDeLimonAbs {
+	
+	public Sprite() {
+		setNombre("Sprite");
 	}
 	
 	public void preparar() {
 		System.out.println("Preparando: " + getNombre());
 	}
-
 }

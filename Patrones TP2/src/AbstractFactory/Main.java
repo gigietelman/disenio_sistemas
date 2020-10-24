@@ -5,23 +5,23 @@ public class Main {
 
 	public static void main(String[] args) {
 		BebidasFactory mainFactory = new BebidasFactory();
-		BebidaDeColaAbstracta bebidaDeCola = null;
-		BebidaDeNaranjaAbstracta bebidaDeNaranja = null;
+		BebidaColaAbs bebidaCola = null;
+		BebidaDeLimonAbs bebidaLimon = null;
 		AbstractFactory factory = null;
 		
 		factory = mainFactory.crearCocaColaFactory();
-		bebidaDeCola = factory.crearBebidaDeCola();
-		bebidaDeCola.preparar();
+		bebidaCola = factory.crearBebidaCola();
+		bebidaCola.preparar();
 		
-		bebidaDeNaranja =  factory.crearBebidaDeNaranja();
-		bebidaDeNaranja.preparar();
+		bebidaLimon =  factory.crearBebidaLimon();
+		bebidaLimon.preparar();
 		
 		factory = mainFactory.creaPepsiColaFactory();
-		bebidaDeCola = factory.crearBebidaDeCola();
-		bebidaDeCola.preparar();
+		bebidaCola = factory.crearBebidaCola();
+		bebidaCola.preparar();
 		
-		bebidaDeNaranja =  factory.crearBebidaDeNaranja();
-		bebidaDeNaranja.preparar();
+		bebidaLimon =  factory.crearBebidaLimon();
+		bebidaLimon.preparar();
 		
 		
 	}
